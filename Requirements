@@ -1,0 +1,19 @@
+ACADEMIC SOCIAL NETWORK
+
+Scripting Platform: JAVA, PHP
+*Use Vanilla
+*we can implement other platforms(ex: nodeJS) [considered as bonus]
+
+Important Features:
+Admin Module
+  Account Management
+    Approval of registration, Terms of use, Create new Account
+
+Main Social Module
+  Add Friends
+    Accept, Request
+  Post (Public or Private)
+    Messages, Upload File (must support different filetypes)
+ 
+ 
+ ** additional Features considered as bonus
