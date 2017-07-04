@@ -38,22 +38,26 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        int idno = Integer.parseInt(request.getParameter("idno"));
+        String idno = request.getParameter("idno");
         String pass = request.getParameter("password");
+        
+        PrintWriter pw = response.getWriter();
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/photo_paradise", "root", "");
-            PreparedStatement ps = conn.prepareStatement("select * from user where idNumber=? and password=?");
+            Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/underscore", "root", "");
+            PreparedStatement ps = conn.prepareStatement("select * from users where idNumber=? and password=?");
             
-            ps.setInt(1, idno);
+            ps.setString(1, idno);
             ps.setString(2, pass);
             
             ResultSet rs = ps.executeQuery();
             
             rs.first();
             
-            if(rs.getInt("idNumber")==idno && rs.getString("password").equals(pass) && rs.getString("userType").equalsIgnoreCase("student")) {
+//            pw.println("" + idno + pass);
+            
+            if(rs.getString("idNumber").equalsIgnoreCase(idno) && rs.getString("password").equalsIgnoreCase(pass) && rs.getString("userType").equalsIgnoreCase("user")) {
                 HttpSession session = request.getSession();
                 session.setAttribute("idNumber", idno);
                 session.setAttribute("password", pass);
@@ -61,7 +65,7 @@ public class Login extends HttpServlet {
                 session.setAttribute("lastname", rs.getString("lastname"));
                 session.setAttribute("email", rs.getString("email"));
                 response.sendRedirect("dashboard.jsp");
-            } else if (rs.getInt("idNumber")==idno && rs.getString("password").equals(pass) && rs.getString("userType").equalsIgnoreCase("faculty")) {
+            } else if (rs.getString("idNumber").equalsIgnoreCase(idno) && rs.getString("password").equals(pass) && rs.getString("userType").equalsIgnoreCase("admin")) {
                 HttpSession session = request.getSession();
                 session.setAttribute("idNumber", idno);
                 session.setAttribute("password", pass);
