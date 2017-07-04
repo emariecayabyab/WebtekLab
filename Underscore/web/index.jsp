@@ -7,7 +7,7 @@
     </head>
     <body>
         <form action="Login" method="POST" accept-charset="UTF-8">
-            <input type="text" placeholder="Enter ID Number" name="idno" required>
+            <input type="number" placeholder="Enter ID Number" name="idno" required>
             <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Login</button>
             <a href="register.jsp">Not Yet a Member?</a>
