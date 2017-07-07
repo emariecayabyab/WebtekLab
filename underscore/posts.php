@@ -14,7 +14,7 @@
      <?php include('navbar.php'); ?>
 
      <div class="container-fluid" align="center">
-       <a href="announcement.php" class="btn btn-primary">Make an announcement</a>
+       <a href="announcement.php" class="btn btn-primary">Make an Announcement</a>
      </div>
 
      <table class="table table-hover">
