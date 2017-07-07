@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2017 at 08:24 AM
+-- Generation Time: Jul 07, 2017 at 09:01 AM
 -- Server version: 5.7.9
 -- PHP Version: 5.6.16
 
@@ -75,15 +75,22 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(25) NOT NULL,
   `status` varchar(12) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `birthDate` varchar(12) NOT NULL,
+  `birthDate` date DEFAULT NULL,
   `contactNo` varchar(12) NOT NULL,
-  `registerDate` date NOT NULL,
+  `registerDate` date DEFAULT NULL,
   `userType` varchar(12) NOT NULL,
-  `firstname` varchar(12) NOT NULL,
-  `lastname` varchar(12) NOT NULL,
+  `firstname` varchar(25) NOT NULL,
+  `lastname` varchar(25) NOT NULL,
   PRIMARY KEY (`idno`),
   UNIQUE KEY `email` (`email`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`idno`, `password`, `status`, `email`, `birthDate`, `contactNo`, `registerDate`, `userType`, `firstname`, `lastname`) VALUES
+(2116832, 'cooper', 'pending', '2116832@slu.edu.ph', '1992-09-15', '9564198629', '2017-07-07', 'user', 'Colvin', 'Cooper');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
