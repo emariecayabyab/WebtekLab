@@ -9,15 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registration</title>
+        <title>Registration Page</title>
     </head>
     <body>
-        <form action="Login" method="POST" accept-charset="UTF-8">
+        <form action="Register" method="POST" accept-charset="UTF-8">
             <input type="number" placeholder="Enter ID Number" name="idno" required>
+            <input type="emai;" placeholder="Enter E-mail" name="email" required>
             <input type="password" placeholder="Enter Password" name="password" required>
             <input type="text" placeholder="Enter First Name" name="firstname" required>
             <input type="text" placeholder="Enter Last Name" name="lastname" required>
-            <button type="submit">Login</button>
+            <button type="submit">Register</button>
             <button type="reset">Reset</button>
         </form>
     </body>
