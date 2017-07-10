@@ -55,7 +55,11 @@ public class Search extends HttpServlet {
             ResultSet rs = ps.executeQuery();
             
             if(rs.first()) {
-                pw.print("Test");
+                HttpSession session = request.getSession();
+                session.setAttribute("firstname", rs.getString("firstname"));
+                session.setAttribute("lastname", rs.getString("lastname"));
+                session.setAttribute("idno", rs.getInt("idno"));
+                response.sendRedirect("searchPage.jsp");
                 
             } else {
                 pw.print("Didn't Work");
