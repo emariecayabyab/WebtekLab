@@ -95,3 +95,7 @@ body {
 .panel-body h4{
 	font-family: Agency FB;
 }
+
+.upload > input {
+	display: none;
+}
