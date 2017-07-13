@@ -29,12 +29,18 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="./ORqmj">Home</a></li>
                                 <li><a href="#">Profile</a></li>
+				<li><a href="#">Friends</a></li>
+				<li><a href="#">Group</a></li>
                             </ul>
-							<ul class="nav navbar-nav navbar-right">
-										<li><a href="">Change Photo</a></li>
-										<li><a href="">Edit Profile</a></li>
+				<ul class="nav navbar-nav navbar-right">
+										<li>
+												<form class="search" action="searchPage.jsp" method="post">
+												<input type="text" class="form-control" id="inputSuccess"/>
+												<span class="glyphicon glyphicon-search form-control-feedback"></span>
+												</form>
+										</li>
 										<li><a href="">Log Out</a></li>
-							</ul>
+				</ul>
                         </div>
                     </div>
                 </div>
@@ -47,6 +53,8 @@
                     <div class="media">
                         <div align="center">
                             <img class="thumbnail img-responsive" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="200px" height="200px">
+							<a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-files-o" aria-hidden="true"></i>Change Photo</a>
+                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-picture-o" aria-hidden="true"></i> Edit Profile</a>
                         </div>
                         <div class="media-body">
                             <h3><strong>Email</strong></h3>
@@ -71,12 +79,6 @@
                         <h1 class="panel-title pull-left" style="font-size:30px;">Student Name<i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom"></i></h1>
                     </span>
                     <span>
-                    <br><br>
-                    <hr>
-                    <span class="pull-left">
-                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-files-o" aria-hidden="true"></i> Posts</a>
-                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-picture-o" aria-hidden="true"></i> Friends</a>
-                    </span>
                 </div>
             </div>
             <hr>
@@ -93,7 +95,7 @@
 					<hr>
                     <div class="post-content">
 						<small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> Public</i></a></small></small></h4>
-                        <p>Simple post content example.</p>
+                        <p><%%></p>
                     </div>
                     <hr>
                 </div>
