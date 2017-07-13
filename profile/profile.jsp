@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css\profilecss.css">
         <script src="javascript/profilescript.js"></script>
         <title>Profile</title>
@@ -53,7 +54,13 @@
                     <div class="media">
                         <div align="center">
                             <img class="thumbnail img-responsive" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="200px" height="200px">
-							<a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-files-o" aria-hidden="true"></i>Change Photo</a>
+			<div class="upload">
+                                <label for="change-photo">
+                                    <a title="" class="btn btn-link" data-toggle="tooltip" data-original-title="Picture" style="text-decoration: none;">
+                                    <i class="fa fa-fw fa-picture-o" aria-hidden="true"></i>Change Photo</a>
+                                </label>
+                                <input id="change-photo" type="file" accept="image/*"/>
+                            </div>
                         <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-picture-o" aria-hidden="true"></i> Edit Profile</a>
                         </div>
                         <div class="media-body">
