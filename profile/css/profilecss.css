@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : s326lab
 */
 .mainbody {
-    background:#f0f0f0;
+   	background-color: #3399FF;
 }
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -23,6 +23,7 @@ and open the template in the editor.
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
+
   padding-left: 0;
   padding-right: 0;
 }
@@ -76,14 +77,21 @@ overflow: hidden;
 }
 
 body {
-    background-color: #e8e8e8;
+    background-color: #3399FF;
 }
+.media-body {}
 .media-body h3{
-	font-size:12px;
+	background-color: #3399FF;
+	font-size:15px;
 }
-.media-body p{
+.media-body p {
+	background-color: white;
 	font-size: 15px;
+	
 }
-.search, .glyphicon{
-	padding-top:10px;
+.panel-body h1{
+	font-style: bold;
+}
+.panel-body h4{
+	font-family: Agency FB;
 }
