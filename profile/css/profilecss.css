@@ -79,8 +79,11 @@ body {
     background-color: #e8e8e8;
 }
 .media-body h3{
-	font-size:11px;
+	font-size:12px;
 }
 .media-body p{
 	font-size: 15px;
+}
+.search, .glyphicon{
+	padding-top:10px;
 }
