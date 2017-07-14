@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 14, 2017, 8:35:53 AM
+    Author     : Ara Coleen Pascua
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+  font-family: 'Lato', sans-serif;
+ /* background-color: #3399ff; */
+}
+
+h1 {
+  position: relative;
+  margin-left: 10%;
+  font-family: 'Lato', sans-serif;
+}
+
+p.dash {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+p.date {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: black;
+}
+
+div.three {
+  position: relative;
+  margin-left: 10%;
+  width:50%;
+  margin-top: 15px;
+}
+
+div.yes {
+  position: relative;
+  margin-left: 10%;
+}
+
+div.title {
+  position: relative;
+  margin-left: 10%;
+  width: 150%;
+}
+
+div.dash {
+    border-style: inset;
+    width: 150%;
+    margin-top: 30px;
+    font-size: 25px;
+     background-color: #3399ff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #cccccc;
+}
