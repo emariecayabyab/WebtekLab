@@ -61,7 +61,7 @@
                                 </label>
                                 <input id="change-photo" type="file" accept="image/*"/>
                             </div>
-                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-picture-o" aria-hidden="true"></i> Edit Profile</a>
+                        <a href="#" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-fw fa-pencil-square" aria-hidden="true"></i> Edit Profile</a>
                         </div>
                         <div class="media-body">
                             <h3><strong>Email</strong></h3>
