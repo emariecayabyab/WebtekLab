@@ -4,50 +4,35 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Jul 14, 2017, 8:35:53 AM
-    Author     : Ara Coleen Pascua
+    Created on : 07 13, 17, 3:27:33 PM
+    Author     : s326lab
 */
 @import url("https://fonts.googleapis.com/css?family=Lato");
-
-body {
-  font-family: 'Lato', sans-serif;
- /* background-color: #3399ff; */
-}
-
 h1 {
-  position: relative;
-  margin-left: 10%;
-  font-family: 'Lato', sans-serif;
-}
-
-p.dash {
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  color: black;
-}
-
-p.date {
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  color: black;
+  text-align: center;
+  font-style:"Lato";
 }
 
 div.three {
   position: relative;
-  margin-left: 10%;
+  margin-left: 5%;
   width:50%;
   margin-top: 15px;
+  font-style:"Lato";
 }
 
 div.yes {
   position: relative;
   margin-left: 10%;
+  width: 150%
+  font-style:"Lato";
 }
 
 div.title {
   position: relative;
   margin-left: 10%;
   width: 150%;
+  font-style:"Lato";
 }
 
 div.dash {
@@ -55,7 +40,19 @@ div.dash {
     width: 150%;
     margin-top: 30px;
     font-size: 25px;
-     background-color: #3399ff;
+
+}
+
+p.dash {
+    font-size: 20px;
+    color: black;
+    font-style:"Lato";
+}
+
+p.date {
+    font-size: 12px;
+    color: red;
+    font-style:"Lato";
 }
 
 ul {
@@ -63,22 +60,55 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f2f2f2;
+    font-style:"Lato";
+    background-color: gray;
 }
 
 li {
     float: left;
+    font-style:"Lato";
 }
 
 li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 10px 16px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-style:"Lato";
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #cccccc;
+    background-color: #111;
+    font-style:"Lato";
+}
+
+.active {
+    background-color: #4CAF50;
+    font-style:"Lato";
+}
+
+button {
+    background-color: #008CBA;
+    font-style:"Lato";
+}
+
+input.first {
+    width:100%;
+    height: 40px;
+    font-style:"Lato";
+}
+
+button.first {
+    width:30%;
+    height: 45px;
+    float: right;
+    font-style:"Lato";
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    font-style:"Lato";
 }
