@@ -1,3 +1,7 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -6,6 +10,7 @@
         <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css\profilecss.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <script src="javascript/profilescript.js"></script>
         <title>Profile</title>
     </head>
@@ -83,7 +88,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <span>
-                        <h1 class="panel-title pull-left" style="font-size:30px;">Student Name<i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom"></i></h1>
+                        <h1 class="panel-title pull-left" style="font-size:30px;">Hello <%= session.getAttribute("firstname") + " "  + session.getAttribute("lastname")%>!</h1>
                     </span>
                     <span>
                 </div>
@@ -91,22 +96,37 @@
             <hr>
         </div>
         <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="border-bottom:solid 1px #636c72;">
+                    <p><%
+                            try {
+                                Class.forName("com.mysql.jdbc.Driver");
+                                Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/underscore", "root", "");
+                                PreparedStatement ps = conn.prepareStatement("SELECT * FROM posts WHERE idno=? ORDER BY date");
+                                
+                                ps.setString(1, ""+session.getAttribute("idno"));
+                                
+                                ResultSet rs = ps.executeQuery();
+                                
+                                if(rs.first()){
+                                    do{
+                    %> 
                     <div class="pull-left">
                         <a href="#">
                             <img class="media-object img-circle" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="50px" height="50px" style="margin-right:8px; margin-top:-5px;">
                         </a>
                     </div>
-                    <h4><a href="#" style="text-decoration:none;"><strong>Student Name</strong></a>
-                    <br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> Date</i></a></small></small></h4>
-					<hr>
+                    <h4><a href="#" style="text-decoration:none;"><strong><%= session.getAttribute("firstname") + " "  + session.getAttribute("lastname")%></strong></a>
+                    <br><small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i><%= rs.getString("date")%></i></a></small></small></h4>
                     <div class="post-content">
-						<small><small><a href="#" style="text-decoration:none; color:grey;"><i><i class="fa fa-clock-o" aria-hidden="true"></i> Public</i></a></small></small></h4>
-                        <p><%%></p>
+                        <p><%= rs.getString("content")%></p></hr>
                     </div>
-                    <hr>
-                </div>
-            </div>
+                                   <% }while(rs.next());
+                                }
+                            } catch(Exception e) {
+                                
+                            }
+                        %></p>
+                    </div>
     </div>
 </div>
 
