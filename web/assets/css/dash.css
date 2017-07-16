@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 14, 2017, 8:35:53 AM
+    Author     : Ara Coleen Pascua
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
+.two {
+    padding: 0 30px 0 10px;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+}
+
+img.img1 {
+    border-radius: 50%;
+}
+
+textarea {
+   resize: none;
+   width: 600px;
+   height: 80px;
+   border-color: #3399ff;
+}
+
+h1 {
+  position: relative;
+  margin-left: 10%;
+  font-family: 'Lato', sans-serif;
+}
+
+p.dash {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: black; 
+}
+
+p.date {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+div.three {
+  position: relative;
+  margin-left: 10%;
+  width:50%;
+  margin-top: 15px;
+}
+
+div.yes {
+  position: relative;
+  margin-left: 10%;
+}
+
+div.title {
+  position: relative;
+  margin-left: 10%;
+  width: 150%;
+}
+
+div.dash {
+    border-style: inset;
+    border-color: #3399ff;
+    width: 150%;
+    margin-top: 30px;
+    font-size: 25px;
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3399ff;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+.search {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
