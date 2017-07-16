@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 07 11, 17, 3:02:52 PM
     Author     : s326lab
 */
+@import url("https://fonts.googleapis.com/css?family=Lato");
 .mainbody {
    	background-color: #3399FF;
 }
@@ -98,4 +99,18 @@ body {
 
 .upload > input {
 	display: none;
+}
+body {
+    background-color: #3399ff;
+    font-family: Lato;
+}
+.media-body h3{
+	font-size:12px;
+}
+.media-body p{
+	font-size: 15px;
+}
+
+.search, .glyphicon{
+	padding-top:10px;
 }
